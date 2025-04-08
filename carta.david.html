@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta Especial</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fdfdfd;
+      margin: 0;
+    }
+    .carta {
+      background-color: #000000;
+      border: 2px solid #2e11ad;
+      border-radius: 10px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0px 4px 8px rgba(173, 54, 138, 0.1);
+    }
+    h1 {
+      color: #8a2be2;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    .botones {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #8a2be2;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #6a1b9a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carta">
+    <h1>Hola...</h1>
+    <p>Quiero preguntarte algo muy importante...</p>
+    <p>¿voy a quilla vamos a la ciudad de hierro ?</p>
+    <p>espero tu respuesta ...</p>
+    <div class="botones">
+      <button onclick="respuesta('Sí')">Sí</button>
+      <button onclick="respuesta('No')">No</button>
+    </div>
+  </div>
+
+  <script>
+    function respuesta(respuesta) {
+      if (respuesta === 'Sí') {
+        alert('¡YAY! Asi me gusta nojodaaa 🥳     ');
+        // Aquí puedes agregar cualquier acción si la respuesta es sí
+      } else {
+        alert('hasta que no digas "Sí" te saldra este mensaje. 😌');
+        // Si la respuesta es "No", vuelve a mostrar el mensaje para que solo puedas elegir "Sí".
+      }
+    }
+  </script>
+
+</body>
+</html>
